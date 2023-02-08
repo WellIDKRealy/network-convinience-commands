@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+while true;
+do
+    ping 8.8.8.8
+done
+trap 'other_commands' SIGINT
