@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+trap 'exit' SIGINT
+
+wait_time = 5
+
+if [! -z "$1" ]
+then
+    wait_time = "$1"
+fi
+
+while true;
+do
+    ping 8.8.8.8
+    echo "Killing Network Manager"
+    pkill -9 NetworkManager
+    wait $wait_time
+done

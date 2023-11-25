@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-sudo herd restart networking
+sudo pkill -9 NetworkManager

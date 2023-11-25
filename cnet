@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
+trap 'exit' SIGINT
 
 while true;
 do
     ping 8.8.8.8
 done
-trap 'other_commands' SIGINT
