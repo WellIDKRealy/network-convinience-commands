@@ -3,7 +3,7 @@ trap 'exit' SIGINT
 
 wait_time=5
 
-if [! -z "$1" ]
+if [ ! -z "$1" ]
 then
     $wait_time = "$1"
 fi
